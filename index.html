@@ -1,0 +1,671 @@
+<!DOCTYPE html>
+<!--[if lt IE 9 ]><html class="no-js oldie" lang="en"> <![endif]-->
+<!--[if IE 9 ]><html class="no-js oldie ie9" lang="en"> <![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!-->
+<html class="no-js" lang="en">
+<!--<![endif]-->
+
+<head>
+
+    <!--- basic page needs
+    ================================================== -->
+    <meta charset="utf-8">
+    <title>ImageHB</title>
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <!-- mobile specific metas
+    ================================================== -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- CSS
+    ================================================== -->
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/vendor.css">
+    <link rel="stylesheet" href="css/main.css">
+
+    <!-- script
+    ================================================== -->
+    <script src="js/modernizr.js"></script>
+    <script src="js/pace.js"></script>
+    
+
+
+</head>
+
+<body id="top">
+
+    <!-- header
+    ================================================== -->
+    <header class="s-header">
+
+        <div class="header-logo">
+        </div>
+
+        <nav class="header-nav">
+
+            <a href="#0" class="header-nav__close" title="close"><span>Close</span></a>
+
+            <div class="header-nav__content">
+                <h3>Navigation</h3>
+                
+                <ul class="header-nav__list">
+                    <li class="current"><a class="smoothscroll"  href="#home" title="home">Home</a></li>
+                    <li><a class="smoothscroll"  href="#annotations" title="annotations">Annotations</a></li>
+                    <li><a class="smoothscroll"  href="#samples" title="samples">Samples</a></li>
+                    <li><a class="smoothscroll"  href="#team" title="team">Team</a></li>
+                </ul>
+    
+                <p>A Novel <a href="https://drive.google.com/drive/folders/1PG6_A8ps97Tz140MDWzXbFiaBTKndGwm" target="_blank" rel="noopener noreferrer">Dataset</a> for Human Action Recognition in Aerial Videos </p>
+            </div> <!-- end header-nav__content -->
+
+        </nav>  <!-- end header-nav -->
+
+        <a class="header-menu-toggle" href="#0">
+            <span class="header-menu-text">Menu</span>
+            <span class="header-menu-icon"></span>
+        </a>
+
+    </header> <!-- end s-header -->
+
+
+    <!-- home
+    ================================================== -->
+    <section id="home" class="s-home target-section" data-parallax="scroll" data-image-src="images/health.gif" data-natural-width=3000 data-natural-height=2000 data-position-y=center>
+
+        <div class="overlay"></div>
+        <div class="shadow-overlay"></div>
+
+        <div class="home-content">
+
+            <div class="row home-content__main">
+
+                <h3>ImageHB</h3>
+
+                <h1>
+                    A novel dataset <br>
+                    for Non Invasive Anemia Detection <br>
+                    in paediatric population <br>
+                </h1>
+
+                <div class="home-content__buttons">
+                    <a href="https://drive.google.com/drive/folders/1QNguQcStWFPBZT94UqvEkZeZsBUWQiPO?usp=drive_link " class="btn btn--stroke" target="_blank" rel="noopener noreferrer">
+                        Sample Dataset <i class="icon-download"></i>
+                    </a>
+                    <a href="#about" class="smoothscroll btn btn--stroke">
+                        More About it
+                    </a>
+                </div>
+
+            </div>
+
+            <div class="home-content__scroll">
+                <a href="#about" class="scroll-link smoothscroll">
+                    <span>Scroll Down</span>
+                </a>
+            </div>
+
+            <div class="home-content__line"></div>
+
+        </div> <!-- end home-content -->
+        <!-- end home-social -->
+
+    </section> <!-- end s-home -->
+
+
+    <!-- about
+    ================================================== -->
+    <section id='about' class="s-about">
+
+        <div class="row section-header has-bottom-sep" data-aos="fade-up">
+            <div class="col-full">
+                <h3 class="subhead subhead--dark">ImageHB</h3>
+                <h1 class="display-1 display-1--light">Non Invasive Anemia Detection</h1>
+            </div>
+        </div> <!-- end section-header -->
+
+        <div class="row about-desc" data-aos="fade-up">
+            <div class="col-full">
+                <p>
+                    We present a dataset of 27,259 labelled clinical images of 
+                    conjunctiva, palm, tongue, and nailbed regions collected from 4,430 paediatric
+                    subjects. The dataset also has correlated  anthropometric data, and laboratory data consisting of Hemoglobin (Hb)
+                    and other blood test values. It also contains manually created segmentation
+                    masks of 324 conjunctiva, 394 palm, 457 tongue, and 357 nailbed images.
+                    This dataset stands as the most extensive of its kind, encompassing a wide
+                    range of images and corresponding blood reports. 
+                </p>
+            </div>
+        </div> <!-- end about-desc -->
+
+        <div class="row about-stats stats block-1-4 block-m-1-2 block-mob-full" data-aos="fade-up">
+            <div class="col-block stats__col ">
+                <div class="stats__count">27259</div>
+                <h5>Total Images Samples</h5>
+            </div>
+            <div class="col-block stats__col ">
+                <div class="stats__count">4430</div>
+                <h5>Number of <br>Patients</h5>
+            </div>
+            <div class="col-block stats__col ">
+                <div class="stats__count">4</div>
+                <h5>Type of Samples</h5>
+            </div>
+            <!-- <div class="col-block stats__col ">
+                <div class="stats__count text-sm">3840</div>
+                x
+                <div class="stats__count text-sm">2160</div>
+                <h5>Resolution</h5>
+            </div> -->
+            
+            <div class="col-block stats__col ">
+                <div class="stats__count">324</div>
+                <h5>Annotated Conjunctiva</h5>
+            </div>
+            <div class="col-block stats__col ">
+                <div class="stats__count">394</div>
+                <h5>Annottated Palm</h5>
+            </div>
+            <div class="col-block stats__col ">
+                <div class="stats__count">457</div>
+                <h5>Annotated Tongue</h5>
+            </div>
+            <div class="col-block stats__col ">
+                <div class="stats__count">357</div>
+                <h5>Annotated nailbed</h5>
+            </div>
+            
+            
+            <div class="col-block stats__col ">
+            </div>
+
+        </div> <!-- end about-stats -->
+
+        <div class="about__line"></div>
+
+    </section> <!-- end s-about -->
+
+
+    <!-- services
+    ================================================== -->
+    <section id='annotations' class="s-services">
+
+        <div class="row section-header has-bottom-sep" data-aos="fade-up">
+            <div class="col-full">
+                <h3 class="subhead">Dataset Annotations</h3>
+                <h1 class="display-2">...</h1>
+            </div>
+        </div> <!-- end section-header -->
+
+        <div class="row services-list block-1-2 block-tab-full">
+
+            <div class="col-block service-item" data-aos="fade-up">
+                <div class="service-icon">
+                    <i class="icon-cube"></i>
+                </div>
+                <div class="service-text">
+                    <h3 class="h2">Annotation Tools</h3>
+                    <p>An open-source tool, <a href="https://www.cvat.ai/">CVAT</a> is used to annotate <br> the images. Click on the 
+                    link provided to know more about it.
+                    </p>
+                </div>
+            </div>
+
+            <div class="col-block service-item" data-aos="fade-up">
+                <div class="service-icon">
+                    <i class="icon-group"></i>
+                </div>
+                <div class="service-text">
+                    <h3 class="h2">The Process</h3>
+                    <p>All the images are annotated manually with the help of image annotation tool in CVAT.
+                    </p>
+                </div>
+            </div>
+
+
+            <div class="col-block service-item" data-aos="fade-up">
+                <div class="service-icon">
+                    <i class="icon-earth"></i>
+                </div>
+                <div class="service-text">
+                    <h3 class="h2">Representation</h3>
+                    <p>Annotations are represented with the help of seven attributes:
+                        <ol>
+                            <li><i>Name of object's class</i></li>
+                            <li><i>Action of Object</i></li>
+                            <li><i>Object's ID</i></li>
+                            <li><i>Bounding box Coordinates (x,y,w,h)</i> </li>
+                        </ol>
+                    </p>
+                </div>
+            </div>
+    
+            <div class="col-block service-item" data-aos="fade-up">
+                <div class="service-icon"><i class="icon-lego-block"></i></div>
+                <div class="service-text">
+                    <h3 class="h2">Annotation Samples</h3>
+                    <table>
+                        <tr>
+                            <th>Name</th>
+                            <th>Original</th>
+                            <th>Mask</th>
+                        </tr>
+                        <tr>
+                            <td>Conjugtiva</td>
+                            <div class="hover-container">
+                            <td>
+                            <img src="images/eye.jpg" alt="Image" class="hidden-image">
+                            </td>
+                            </div>
+                            <div class="hover-container">
+                            <td>
+                            <img src="images/eye m.jpg" class="hidden-image">
+                            </td>
+                             </div>
+                        </tr>
+                        <tr>
+                            <td>Tongue</td>
+                            <div class="hover-container">
+                            <td>
+                            <img src="images/tongue.jpg"  class="hidden-image">
+                            </td>
+                            </div>
+                            <div class="hover-container">
+                            <td>
+                            <img src="images/tongue m.jpg" class="hidden-image">
+                            </td>
+                            </div>
+                        </tr>
+                        <tr>
+                            <td>Palm</td>
+                            <div class="hover-container">
+                            <td>
+                            <img src="images/palm.jpg" class="hidden-image">
+                            </td>
+                            </div>
+                            <div class="hover-container">
+                            <td>
+                            <img src="images/palm m.jpg" class="hidden-image">
+                            </td>
+                        </div>
+                        </tr>
+                        <tr>
+                            <td>Nailbed</td>
+                            <div class="hover-container">
+                            <td>
+                            <img src="images/nail.jpg"  class="hidden-image">
+                            </td>
+                            </div>
+                            <div class="hover-container">
+                            <td>
+                            <img src="images/nail m.jpg" class="hidden-image">
+                        </td>
+                            </div>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+
+        </div> <!-- end services-list -->
+
+    </section> <!-- end s-services -->
+
+
+    <!-- works
+    ================================================== -->
+    <section id='samples' class="s-works">
+
+        <div class="intro-wrap">
+                
+            <div class="row section-header has-bottom-sep light-sep" data-aos="fade-up">
+                <div class="col-full">
+                    <h3 class="subhead">Frame Samples</h3>
+                    <h1 class="display-2 display-2--light">Feel Free To Check Out Some Of Our Frames</h1>
+                </div>
+            </div> <!-- end section-header -->
+
+        </div> <!-- end intro-wrap -->
+        
+        <div class="row works-content">
+            <div class="col-full masonry-wrap">
+                <div class="masonry">
+    
+                    <div class="masonry__brick" data-aos="fade-up">
+                        <div class="item-folio"> 
+                            <div class="item-folio__thumb">
+                                <a href="images/dataset/gallery/annotated/img1.jpg" class="thumb-link" title="Image 1" data-size="1050x700">
+                                    <img src="images/dataset/gallery/org/img1.jpg"
+                                    srcset="images/dataset/gallery/org/img1.jpg 1x">
+                                </a>
+                            </div>
+    
+                            <div class="item-folio__text">
+                                <h3 class="item-folio__title">
+                                    Image 1
+                                </h3>
+                                <p class="item-folio__cat">
+                                    Click to see annotated image
+                                </p>
+                            </div>
+    
+                            <a href="images/dataset/gallery/org/img1.jpg" class="item-folio__project-link" title="Preview">
+                                <i class="icon-eye"></i>
+                            </a>
+                        </div>
+                    </div> <!-- end masonry__brick -->
+
+                    <div class="masonry__brick" data-aos="fade-up">
+                        <div class="item-folio"> 
+                            <div class="item-folio__thumb">
+                                <a href="images/dataset/gallery/annotated/img2.jpg" class="thumb-link" title="Image 2" data-size="1050x700">
+                                    <img src="images/dataset/gallery/org/img2.jpg"
+                                    srcset="images/dataset/gallery/org/img2.jpg 1x">
+                                </a>
+                            </div>
+    
+                            <div class="item-folio__text">
+                                <h3 class="item-folio__title">
+                                    Image 2
+                                </h3>
+                                <p class="item-folio__cat">
+                                    Click to see annotated image
+                                </p>
+                            </div>
+    
+                            <a href="images/dataset/gallery/org/img2.jpg" class="item-folio__project-link" title="Preview">
+                                <i class="icon-eye"></i>
+                            </a>
+                        </div>
+                    </div> <!-- end masonry__brick -->
+                    
+                    <div class="masonry__brick" data-aos="fade-up">
+                        <div class="item-folio"> 
+                            <div class="item-folio__thumb">
+                                <a href="images/dataset/gallery/annotated/img3.jpg" class="thumb-link" title="Image 3" data-size="1050x700">
+                                    <img src="images/dataset/gallery/org/img3.jpg"
+                                    srcset="images/dataset/gallery/org/img3.jpg 1x">
+                                </a>
+                            </div>
+    
+                            <div class="item-folio__text">
+                                <h3 class="item-folio__title">
+                                    Image 3
+                                </h3>
+                                <p class="item-folio__cat">
+                                    Click to see annotated image
+                                </p>
+                            </div>
+    
+                            <a href="images/dataset/gallery/org/img3.jpg" class="item-folio__project-link" title="Preview">
+                                <i class="icon-eye"></i>
+                            </a>
+                        </div>
+                    </div> <!-- end masonry__brick -->
+
+                    <div class="masonry__brick" data-aos="fade-up">
+                        <div class="item-folio"> 
+                            <div class="item-folio__thumb">
+                                <a href="images/dataset/gallery/annotated/img4.jpg" class="thumb-link" title="Image 4" data-size="1050x700">
+                                    <img src="images/dataset/gallery/org/img4.jpg"
+                                    srcset="images/dataset/gallery/org/img4.jpg 1x">
+                                </a>
+                            </div>
+    
+                            <div class="item-folio__text">
+                                <h3 class="item-folio__title">
+                                    Image 4
+                                </h3>
+                                <p class="item-folio__cat">
+                                    Click to see annotated image
+                                </p>
+                            </div>
+    
+                            <a href="images/dataset/gallery/org/img4.jpg" class="item-folio__project-link" title="Preview">
+                                <i class="icon-eye"></i>
+                            </a>
+                        </div>
+                    </div> <!-- end masonry__brick -->
+
+                    <div class="masonry__brick" data-aos="fade-up">
+                        <div class="item-folio"> 
+                            <div class="item-folio__thumb">
+                                <a href="images/dataset/gallery/annotated/img5.jpg" class="thumb-link" title="Image 5" data-size="1050x700">
+                                    <img src="images/dataset/gallery/org/img5.jpg"
+                                    srcset="images/dataset/gallery/org/img5.jpg 1x">
+                                </a>
+                            </div>
+    
+                            <div class="item-folio__text">
+                                <h3 class="item-folio__title">
+                                    Image 5
+                                </h3>
+                                <p class="item-folio__cat">
+                                    Click to see annotated image
+                                </p>
+                            </div>
+    
+                            <a href="images/dataset/gallery/org/img5.jpg" class="item-folio__project-link" title="Preview">
+                                <i class="icon-eye"></i>
+                            </a>
+                        </div>
+                    </div> <!-- end masonry__brick -->
+
+                    <div class="masonry__brick" data-aos="fade-up">
+                        <div class="item-folio"> 
+                            <div class="item-folio__thumb">
+                                <a href="images/dataset/gallery/annotated/img6.jpg" class="thumb-link" title="Image 6" data-size="1050x700">
+                                    <img src="images/dataset/gallery/org/img6.jpg"
+                                    srcset="images/dataset/gallery/org/img6.jpg 1x">
+                                </a>
+                            </div>
+    
+                            <div class="item-folio__text">
+                                <h3 class="item-folio__title">
+                                    Image 6
+                                </h3>
+                                <p class="item-folio__cat">
+                                    Click to see annotated image
+                                </p>
+                            </div>
+    
+                            <a href="images/dataset/gallery/org/img6.jpg" class="item-folio__project-link" title="Preview">
+                                <i class="icon-eye"></i>
+                            </a>
+                        </div>
+                    </div> <!-- end masonry__brick -->
+
+                
+                    
+
+                </div> <!-- end masonry -->
+            </div> <!-- end col-full -->
+        </div> <!-- end works-content -->
+
+    </section> <!-- end s-works -->
+
+
+    <!-- clients
+    ================================================== -->
+    <section id="team" class="s-clients">
+
+        <div class="row section-header" data-aos="fade-up">
+            <div class="col-full">
+                <h3 class="subhead">Our Team</h3>
+            </div>
+        </div> <!-- end section-header -->
+
+        <div class="row clients-testimonials" data-aos="fade-up">
+            <div class="col-full">
+                <div class="testimonials">
+                    <div class="testimonials__slide">
+                
+                        <p>Surbhi Kapoor has completed her B.Tech from Guru Nanak Dev Engineering College,Punjab, India in 2014 and M.Tech in 2016 in Computer Science and engineering. She is awarded with Junior Research Fellow (JRF) award from university grant commission (UGC), New Delhi in 2018 and she is pursuing her Ph.D in Computer Science and Engineering from University Institute of Engineering and Technology, Chandigarh, India. Her research interests include object detection, image and video analytics.</p>
+                
+                        <img src="images/avatars/user-02.jpg" alt="Author image" class="testimonials__avatar">
+                        <div class="testimonials__info">
+                            <span class="testimonials__name">Surbhi Kapoor</span> 
+                            <span class="testimonials__pos">PhD,CSE,UIET</span>
+                        </div>
+                
+                    </div>
+
+                    <div class="testimonials__slide">
+                        <p>Akashdeep is currently working as an assistant professor in Computer Science and Engineering at University Institute of Engineering. & Technology, Panjab University, Chandigarh, India.He has published more than 22 research papers in international journals and conferences. He has 12+ years of teaching and research experience. His research interests include wireless networks, soft computing and video analytics, moving object detection and tracking, traffic sensing and classification.</p>
+                
+                        <img src="images/avatars/user-01.jpg" alt="Author image" class="testimonials__avatar">
+                        <div class="testimonials__info">
+                            <span class="testimonials__name">Akashdeep Sharma</span> 
+                            <span class="testimonials__pos">Assistant Professor,CSE,UIET</span>
+                        </div>
+                    </div>
+                
+                    <div class="testimonials__slide">
+                
+                        <p>Amandeep Verma is currently working as an associate professor in Information and Technology at University Institute of Engineering. & Technology, Panjab University, Chandigarh, India. She has done her PhD in Computer Science & Engineering in 2016. Her area of interest includes parallel and distributed computing, computer networks, workflow scheduling in cloud computing, and IoT.</p>
+                        <br><br><br>
+                        <img src="images/avatars/user-04.jpg" alt="Author image" class="testimonials__avatar">
+                        <div class="testimonials__info">
+                            <span class="testimonials__name">Amandeep Verma</span> 
+                            <span class="testimonials__pos">Assistant Professor,IT,UIET</span>
+                        </div>
+                
+                    </div>
+                    
+                    <div class="testimonials__slide">
+                
+                        <p>Sarbjeet Singh is currently working as a professor in Computer Science and Engineering at UIET, Panjab University, Chandigarh, India. He has received Ph.D degree in Computer Science and Engineering from Thapar University, Patiala, India in 2009.He has more than 30 research publications in international journals and conferences to his credit. His research interests include parallel and distributed systems, distributed security architectures, privacy and trust related issues in distributed environments, object detection and video surveillance.</p>
+                
+                        <img src="images/avatars/user-03.jpg" alt="Author image" class="testimonials__avatar">
+                        <div class="testimonials__info">
+                            <span class="testimonials__name">Sarbjeet Singh</span> 
+                            <span class="testimonials__pos">Professor,CSE,UIET</span>
+                        </div>
+                
+                    </div>
+                    
+                    
+
+                </div><!-- end testimonials -->
+                
+            </div> <!-- end col-full -->
+            
+        </div> <!-- end client-testimonials -->
+
+    </section> <!-- end s-clients -->
+    
+    <!-- contact
+    ================================================== -->
+    <section id="contact" class="s-contact">
+
+        <div class="overlay"></div>
+
+        <div class="row section-header" data-aos="fade-up">
+            <div class="col-full">
+                <h3 class="subhead">Contact Us</h3>
+                <h1 class="display-2 display-2--light">Reach Out For The Dataset Or Any Query</h1>
+            </div>
+        </div>
+
+        <div class="row contact-content" data-aos="fade-up">
+            
+            <div class="contact-primary">
+
+                <h3 class="h6">Send Us A Message</h3>
+
+                <form name="contactForm" id="contactForm" method="POST" action="https://usebasin.com/f/2be23ae05c51" enctype="multipart/form-data" >
+                    <fieldset>
+    
+                    <div class="form-field">
+                        <input name="contactName" type="text" id="contactName" placeholder="Your Name" value="" minlength="2" required="" aria-required="true" class="full-width">
+                    </div>
+                    <div class="form-field">
+                        <input name="contactEmail" type="email" id="contactEmail" placeholder="Your Email" value="" required="" aria-required="true" class="full-width">
+                    </div>
+                    <div class="form-field">
+                        <input name="contactSubject" type="text" id="contactSubject" placeholder="Subject" value="" class="full-width">
+                    </div>
+                    <div class="form-field">
+                        <textarea name="contactMessage" id="contactMessage" placeholder="Your Message" rows="10" cols="50" required="" aria-required="true" class="full-width"></textarea>
+                    </div>
+                    <div class="form-field">
+                        <button class="full-width btn--primary">Submit</button>
+                        <div class="submit-loader">
+                            <div class="text-loader">Sending...</div>
+                            <div class="s-loader">
+                                <div class="bounce1"></div>
+                                <div class="bounce2"></div>
+                                <div class="bounce3"></div>
+                            </div>
+                        </div>
+                    </div>
+    
+                    </fieldset>
+                </form>
+
+            </div> <!-- end contact-primary -->
+
+            <div class="contact-secondary">
+                <div class="contact-info">
+
+                    <h3 class="h6 hide-on-fullwidth">Contact Info</h3>
+
+                    <div class="cinfo">
+                        <h5>Where to Find Us</h5>
+                        <p>
+                            University Institute of Engineering and Technology<br>
+                            South Campus,Panjab University, Sector 25<br>
+                            Chandigarh,India 160014
+                        </p>
+                    </div>
+
+
+                </div> <!-- end contact-info -->
+            </div> <!-- end contact-secondary -->
+
+        </div> <!-- end contact-content -->
+
+    </section> <!-- end s-contact -->
+
+
+    <!-- footer
+    ================================================== -->
+    <footer>
+
+
+        <div class="row footer-bottom">
+
+            <div class="col-twelve">
+                <div class="go-top">
+                    <a class="smoothscroll" title="Back to Top" href="#top"><i class="icon-arrow-up" aria-hidden="true"></i></a>
+                </div>
+            </div>
+
+        </div> <!-- end footer-bottom -->
+
+    </footer> <!-- end footer -->
+
+
+
+    <!-- preloader
+    ================================================== -->
+    <div id="preloader">
+        <div id="loader">
+            <div class="line-scale-pulse-out">
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Java Script
+    ================================================== -->
+    <script src="js/jquery-3.2.1.min.js"></script>
+    <script src="js/plugins.js"></script>
+    <script src="js/main.js"></script>
+
+</body>
+
+</html>
